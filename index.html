@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coverstore.au — Precision Vehicle Interior Protection</title>
+<meta name="description" content="Custom-fit dash mats, seat covers, floor mats and bonnet protectors for 500+ vehicles. Australian-made, precision-cut, free shipping across Australia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#141519;
+    --panel:#1C1E23;
+    --silver:#B9BFC6;
+    --burgundy:#8A2C3B;
+    --white:#EDEAE4;
+    --line:#2C2E34;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--white);font-family:'Manrope',Arial,sans-serif;font-weight:300;line-height:1.7;}
+  h1,h2,h3{font-family:'Bodoni Moda',Georgia,serif;font-weight:500;margin:0;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 30px;}
+  img{max-width:100%;display:block;}
+
+  .topbar{border-bottom:1px solid var(--line);}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:22px 30px;flex-wrap:wrap;gap:14px;}
+  .brand{font-family:'Bodoni Moda',serif;font-size:21px;color:var(--white);text-decoration:none;letter-spacing:.5px;}
+  .topnav{display:flex;gap:30px;flex-wrap:wrap;}
+  .topnav a{color:var(--silver);text-decoration:none;font-size:13.5px;font-weight:400;}
+  .topnav a:hover{color:var(--white);}
+
+  .hero-split{display:grid;grid-template-columns:1fr 1fr;min-height:560px;}
+  @media(max-width:820px){.hero-split{grid-template-columns:1fr;}}
+  .hero-photo{position:relative;}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:grayscale(15%) contrast(1.05);}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:60px;}
+  @media(max-width:820px){.hero-copy{padding:50px 30px;}}
+  .hero-copy .kicker{font-size:13px;color:var(--burgundy);letter-spacing:.5px;margin-bottom:18px;}
+  .hero-copy h1{font-size:clamp(30px,4vw,44px);line-height:1.2;margin-bottom:22px;font-style:italic;}
+  .hero-copy p{color:var(--silver);font-size:16px;max-width:42ch;margin-bottom:30px;font-weight:300;}
+  .btn{display:inline-block;padding:14px 26px;text-decoration:none;font-size:13.5px;letter-spacing:.3px;font-weight:500;}
+  .btn-line{border:1px solid var(--silver);color:var(--white);}
+  .btn-line:hover{border-color:var(--white);}
+
+  .rule{border:none;border-top:1px solid var(--line);margin:0;}
+
+  .services{padding:70px 0;}
+  .services-head{max-width:56ch;margin-bottom:44px;}
+  .services-head .kicker{font-size:13px;color:var(--burgundy);margin-bottom:12px;}
+  .services-head h2{font-size:30px;font-style:italic;}
+  .svc-list{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  @media(max-width:640px){.svc-list{grid-template-columns:1fr;}}
+  .svc-row{display:flex;gap:20px;padding:26px 0;border-top:1px solid var(--line);}
+  .svc-row:nth-child(odd){padding-right:30px;}
+  .svc-row:nth-child(even){padding-left:30px;}
+  @media(max-width:640px){.svc-row:nth-child(even){padding-left:0;}}
+  .svc-icon{width:26px;height:26px;color:var(--burgundy);flex-shrink:0;margin-top:3px;}
+  .svc-row h3{font-size:17px;margin-bottom:6px;font-style:italic;color:var(--white);}
+  .svc-row p{font-size:14px;color:var(--silver);margin:0;font-weight:300;}
+
+  .feature{padding:0 0 70px;}
+  .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+  @media(max-width:820px){.feature-grid{grid-template-columns:1fr;}}
+  .feature-photo img{width:100%;}
+  .feature-copy .kicker{font-size:13px;color:var(--burgundy);margin-bottom:14px;}
+  .feature-copy h2{font-size:28px;margin-bottom:18px;font-style:italic;}
+  .feature-copy p{color:var(--silver);font-size:15.5px;margin-bottom:14px;font-weight:300;}
+
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0;}
+  .stats .wrap{display:flex;flex-wrap:wrap;gap:0;}
+  .stat{flex:1;min-width:150px;text-align:center;padding:0 16px;}
+  .stat .n{font-family:'Bodoni Moda',serif;font-size:32px;color:var(--white);font-style:italic;}
+  .stat .l{font-size:12.5px;color:var(--silver);margin-top:6px;}
+
+  .cta{padding:70px 0;text-align:center;}
+  .cta h2{font-size:30px;font-style:italic;margin-bottom:18px;}
+  .cta p{color:var(--silver);margin-bottom:28px;font-weight:300;}
+  .btn-solid{background:var(--burgundy);border-color:var(--burgundy);color:#fff;}
+
+  footer{border-top:1px solid var(--line);padding:34px 0;font-size:13.5px;color:var(--silver);}
+  .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+  footer a{color:var(--white);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="#home" class="brand">COVERSTORE.AU</a>
+    <nav class="topnav">
+      <a href="#home">Home</a>
+      <a href="#services">Range</a>
+      <a href="#craft">Craft</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero-split" id="home">
+  <div class="hero-copy">
+    <div class="kicker">Custom-Fit Interior Protection</div>
+    <h1>Precision-cut protection for vehicles that deserve it.</h1>
+    <p>Dash mats, seat covers, floor mats and bonnet protectors, pattern-matched to your car's exact make, model and year. Australian-made. Nothing generic.</p>
+    <a class="btn btn-line" href="https://coverstore.au/" target="_blank" rel="noopener">View the collection</a>
+  </div>
+  <div class="hero-photo">
+    <img src="https://images.pexels.com/photos/10054684/pexels-photo-10054684.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Black leather car seat interior">
+  </div>
+</header>
+
+<hr class="rule">
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="services-head">
+      <div class="kicker">The Collection</div>
+      <h2>Six ways to protect the interior you paid for</h2>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="7" width="18" height="10" rx="1.5"/><circle cx="7.5" cy="14" r="1"/><circle cx="16.5" cy="14" r="1"/></svg>
+        <div><h3>Dash mats</h3><p>UV-stable, anti-glare, cut around sensors and vents.</p></div>
+      </div>
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 20v-6a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v6"/><path d="M6 20h12"/><path d="M8 10V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/></svg>
+        <div><h3>Seat covers</h3><p>Airbag-aware, bolster-matched, factory-line stitching.</p></div>
+      </div>
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 9h16"/></svg>
+        <div><h3>Floor mats</h3><p>Deep-set, moulded to the true footwell shape.</p></div>
+      </div>
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+        <div><h3>Bonnet protectors</h3><p>Absorb stone chips before they reach the paint.</p></div>
+      </div>
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+        <div><h3>Headlight covers</h3><p>Chip and yellowing protection without dulling output.</p></div>
+      </div>
+      <div class="svc-row">
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 17h13V7H7l-4 5v5z"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg>
+        <div><h3>4WD range</h3><p>Reinforced patterns for heavier, harder daily use.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="feature" id="craft">
+  <div class="wrap feature-grid" style="padding-top:60px;">
+    <div class="feature-photo">
+      <img src="https://images.pexels.com/photos/30679981/pexels-photo-30679981.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Close-up of a car bonnet with reflections">
+    </div>
+    <div class="feature-copy">
+      <div class="kicker">The Difference</div>
+      <h2>Cut to one vehicle. Not stretched over most.</h2>
+      <p>A generic cover is a compromise from the first cut — one loose shape sold as though it fits everything. It never quite does.</p>
+      <p>Every Coverstore.au pattern starts from a single vehicle's real dimensions, built and finished in Australia, so airbag seams, sensor housings and stitching lines land exactly where the factory put them.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="n">500+</div><div class="l">Vehicle patterns</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">Australian-made</div></div>
+    <div class="stat"><div class="n">Free</div><div class="l">Shipping nationwide</div></div>
+  </div>
+</div>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Enquire about your vehicle</h2>
+    <p>287 Military Rd, Cremorne NSW 2090 · info@coverstore.au</p>
+    <a class="btn btn-solid" href="https://coverstore.au/" target="_blank" rel="noopener">Visit coverstore.au</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>&copy; 2026 Coverstore.au</span>
+    <a href="https://www.facebook.com/coverstore.au" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+</body>
+</html>
